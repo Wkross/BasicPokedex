@@ -1,0 +1,59 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <title>POKEDECSU</title>
+    <link rel="icon" href="img/PokeballIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="pokedex-body">
+        <header> <h1>POKEDECSU</h1> </header>
+        
+        <section id="pokemon-search-container">
+            <div id="pokemon-entry-section">
+                <input type="text" id="pokemon-entry" name="pokemonEntry"  placeholder="Insert pokemon ID or name">
+                <button id="search-btn" onclick="searchPokemon()">Search Pokemon</button>
+            </div>
+    
+            <div id="search-status">The search: has been not found</div>
+
+            <section id="pokemon-info-container">
+                <figure id="pokemon-picture-container">
+                    <img id="pokemon-picture" src="img/PokeballPlaceholder.png" alt="Pokemon Picture">
+                    <img id="pokemon-is-in-team" src="img/star1.png" alt="Pokemon is in team">
+
+                </figure>
+
+                <div id="pokemon-info">
+                    <h2 id="pokemon-name">Pokemon data</h2>
+
+                    <div id="pokemon-type">
+                        <p class="pokemon-type">Pokemon Type1</p>
+                        <p class="pokemon-type">Pokemon Type2</p>
+                    </div>
+
+                    <ul>
+                        <li class="pokemon-stat">Base HP</li>
+                        <li class="pokemon-stat">Base Attack</li>
+                        <li class="pokemon-stat">Base Defense</li>
+                        <li class="pokemon-stat">Base Special Attack</li>
+                        <li class="pokemon-stat">Base Special Defense</li>
+                        <li class="pokemon-stat">Base Speed</li>
+                    </ul>
+                </div>
+            </section> 
+
+            <section id="pokemon-options-container">
+                <button id="previous-pokemon-btn">Previous Pokemon</button>
+                <button id="manage-team-btn">Add Pokemon to team</button>
+                <button id="next-pokemon-btn">Next Pokemon</button>
+            </section>
+        </section>
+    </div>
+
+    <footer>WK</footer>
+
+    <script src="scripts/constants.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
